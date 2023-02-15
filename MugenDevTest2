@@ -12,7 +12,7 @@ local args = {[1] = "Change_Value",[2] = game:GetService("ReplicatedStorage").Pl
 local args = {[1] = "Change_Value",[2] = game:GetService("ReplicatedStorage").Player_Data[game.Players.LocalPlayer.name].Customization.Clothes.Pants.Index,[3] = 25}game:GetService("ReplicatedStorage").Remotes.To_Server.Handle_Initiate_S:FireServer(unpack(args))
 end
 
-if game.PlaceId == 6152116111 then
+if game.PlaceId == 6152116110 then
 local UIS = game:GetService("UserInputService")
 local VirtualUser = game:GetService("VirtualUser")
 local VIM =game:GetService("VirtualInputManager")
