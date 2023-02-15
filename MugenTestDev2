@@ -2713,7 +2713,7 @@ spawn(function()
             elseif FarmMethod == "Behind" then
                 FarmModes = CFrame.new(0,0,getgenv().Distance)
             elseif FarmMethod == "Front" then
-                FarmModes = CFrame.new(0,0,-getgenv().Distance)
+                FarmModes = CFrame.new(0,0,-getgenv().Distance) * CFrame.Angles(math.rad(90),0,0)
             end
             for i,v in pairs(LP.PlayerGui.MainGuis.Items.Scroll:GetChildren()) do
                 Insert = true
