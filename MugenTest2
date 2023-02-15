@@ -2352,7 +2352,7 @@ Settings:AddDropdown("Kill Aura Method", {"Scythe","Sword","Combat","Claw"}, "Sw
 end)
 
 getgenv().FarmMethod = "Above"
-Settings:AddDropdown("Farm Method", {"Above","Below","Behind"}, "Above", false, function(v)
+Settings:AddDropdown("Farm Method", {"Above","Below","Behind","Front"}, "Above", false, function(v)
     getgenv().FarmMethod = v
 end)
 
@@ -2712,6 +2712,8 @@ spawn(function()
                 FarmModes = CFrame.new(0,-getgenv().Distance,0) * CFrame.Angles(math.rad(90),0,0)
             elseif FarmMethod == "Behind" then
                 FarmModes = CFrame.new(0,0,getgenv().Distance)
+            elseif FarmMethod == "Front" then
+                FarmModes = CFrame.new(0,180,getgenv().Distance)    
             end
             for i,v in pairs(LP.PlayerGui.MainGuis.Items.Scroll:GetChildren()) do
                 Insert = true
