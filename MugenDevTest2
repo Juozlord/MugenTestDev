@@ -4,7 +4,7 @@ if not LPH_OBFUSCATED then
     LPH_NO_VIRTUALIZE = function(...) return(...) end;
 end
 
-if game.PlaceId == 5956785391 then
+if game.PlaceId == 5956785111 then
     local CoreGui = game:GetService("StarterGui")
     CoreGui:SetCore("SendNotification", {Title = "Main Menu"; Text = "HAHA YOUR NAKED NOW"; Duration = 60; Button1 = "Ok"; })
 local args = {[1] = "Change_Value",[2] = game:GetService("ReplicatedStorage").Player_Data[game.Players.LocalPlayer.name].Customization.Clothes.Shirt.Index,[3] = -17}game:GetService("ReplicatedStorage").Remotes.To_Server.Handle_Initiate_S:FireServer(unpack(args))
@@ -12,7 +12,7 @@ local args = {[1] = "Change_Value",[2] = game:GetService("ReplicatedStorage").Pl
 local args = {[1] = "Change_Value",[2] = game:GetService("ReplicatedStorage").Player_Data[game.Players.LocalPlayer.name].Customization.Clothes.Pants.Index,[3] = 25}game:GetService("ReplicatedStorage").Remotes.To_Server.Handle_Initiate_S:FireServer(unpack(args))
 end
 
-if game.PlaceId == 6152116144 then
+if game.PlaceId == 6152116111 then
 local UIS = game:GetService("UserInputService")
 local VirtualUser = game:GetService("VirtualUser")
 local VIM =game:GetService("VirtualInputManager")
@@ -1050,7 +1050,7 @@ end)
 
 --Map 2
 
-elseif game.PlaceId == 11468159863 then
+elseif game.PlaceId == 11468159112 then
 local UIS = game:GetService("UserInputService")
 local VirtualUser = game:GetService("VirtualUser")
 local VIM =game:GetService("VirtualInputManager")
